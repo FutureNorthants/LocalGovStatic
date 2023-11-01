@@ -1,0 +1,41 @@
+{% if site.site_wide_alert %}
+<div
+  class="bg-red-700 text-white"
+  x-cloak
+  x-data="{hide_alert: true}"
+  x-init="hide_alert = docCookies.hasItem('hide_alert_{{ site.site_wide_alert.id }}') ? (docCookies.getItem('hide_alert_{{ site.site_wide_alert.id }}') == 'true') : false;"
+  x-bind:class="{ 'hidden': hide_alert, 'block': !hide_alert }"
+>
+  <div class="container mx-auto max-w-[76rem] px-4 py-6 flex flex-col">
+    <div class="flex flex-row space-between flex-wrap items-center">
+      <div class="flex-grow site-wide-alert">
+        <p class="text-lg font-bold">{{ site.site_wide_alert.title }}</p>
+        <p class="text-lg">{{ site.site_wide_alert.message | markdownify }}</p>
+      </div>
+      <div class="pr-4">
+        <button
+          class="text-white p-4 no-underline flex items-center justify-center rounded-md hover:underline hover:bg-red-900"
+          @click="hide_alert = true; docCookies.setItem('hide_alert_{{ site.site_wide_alert.id }}', 'true', (7*24*60*60), '/');"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+
+          Dismiss
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

@@ -5,7 +5,12 @@ baseurl: ""
 # logo_url: "/assets/images/path-to-logo.svg"
 
 copyright_name: Copyright name
-copyright_link: "#"
+copyright_link: "/example-content-page/"
+
+# site_wide_alert:
+#   id: 1
+#   title: An example alert
+#   message: This is an example of a site wide alert message with a [link](/components/site-wide-alert/).
 
 phase: ALPHA
 phase_link: mailto:example@example.com

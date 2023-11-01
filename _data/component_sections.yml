@@ -24,6 +24,9 @@
     - name: Phase banner
       link: /components/phase-banner/
       summary: Add a phase banner to the site
+    - name: Site Wide Alert
+      link: /components/site-wide-alert/
+      summary: Add an alert banner to every page on the site
     - name: Video
       link: /components/video/
       summary: Embed a YouTube video
