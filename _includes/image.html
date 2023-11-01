@@ -1,0 +1,15 @@
+<figure class="mb-4 shadow-md rounded-md">
+  <div
+    class="aspect-w-{{ include.width | default: 16 }} aspect-h-{{ include.height | default: 9 }} not-prose"
+  >
+    <img
+      src="{{ include.image }}"
+      alt="{{ include.alt }}"
+      class="rounded-t-md w-full h-full object-center object-cover"
+    />
+  </div>
+
+  {% if include.caption %}
+  <figcaption class="pb-4 px-4">{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>

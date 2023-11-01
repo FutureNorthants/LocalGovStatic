@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<div
+  class="prose prose-lg prose-a:text-action-500 hover:prose-a:text-action-900 hover:prose-a:decoration-dotted"
+>
+  {{ content }}
+</div>
+
+{% if page.sections %} {% include section-links.html %} {% endif %}

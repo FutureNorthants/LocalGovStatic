@@ -1,0 +1,8 @@
+title: Contents example
+links:
+  - name: Overview
+    link: /components/contents/
+  - name: An example sub page
+    link: /components/contents/an-example-sub-page/
+  - name: Another example sub page
+    link: /components/contents/another-example-sub-page/

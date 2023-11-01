@@ -1,0 +1,8 @@
+- title: Templates
+  links:
+    - name: Landing Page
+      link: /templates/landing-page/
+      summary: An example landing page
+    - name: Content Page
+      link: /templates/content-page/
+      summary: An example content page

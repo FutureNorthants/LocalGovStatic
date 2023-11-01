@@ -1,0 +1,14 @@
+- title: Getting started
+  links:
+    - name: Components
+      link: /components/
+      summary: Reusable components
+    - name: Page templates
+      link: /templates/
+      summary: Details of the various page layouts
+    - name: News page
+      link: /news/
+      summary: An example news/blog page
+    - name: An example content page
+      link: /example-content-page/
+      summary: An example content page displaying components

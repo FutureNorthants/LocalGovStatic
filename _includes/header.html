@@ -1,0 +1,96 @@
+<header class="bg-action-500 text-white" x-data="{ open: false }">
+  <div
+    class="container mx-auto flex flex-wrap md:flex-nowrap items-center justify-between p-4 max-w-[76rem]"
+  >
+    <div class="w-64">
+      <a
+        href="{{ site.baseurl }}/"
+        title="Home"
+        class="block border-2 border-transparent hover:border-yellow-500"
+      >
+        {% if site.logo_url %}
+        <img
+          src="{{ site.baseurl }}{{ site.logo_url }}"
+          alt="{{ site.title }}"
+          class="hover:opacity-80"
+        />
+        {% else %}
+        <p class="block font-bold py-4 text-2xl">{{ site.title }}</p>
+        {% endif %}
+      </a>
+    </div>
+    <div class="md:hidden">
+      <button
+        type="button"
+        class="p-4"
+        @click="open = ! open"
+        aria-label="Toggle menu"
+      >
+        <template x-if="open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </template>
+        <template x-if="!open">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </template>
+      </button>
+    </div>
+    <div
+      class="w-full mt-2 md:w-auto md:mt-0 md:block"
+      x-bind:class="! open ? 'hidden' : ''"
+      x-transition
+    >
+      <ul
+        class="flex flex-col md:flex-row md:flex-nowrap md:items-center md:justify-between"
+      >
+        {% for item in site.data.navigation.items %}
+        <li class="nav-item border-b-2 border-white md:border-b-0">
+          <a
+            href="{{ item.link }}"
+            class="text-white block underline font-bold mx-0 my-2 p-2 md:my-0 md:mx-4 md:py-4 hover:opacity-80 hover:decoration-dotted"
+            >{{ item.name }}</a
+          >
+          {% if item.dropdown %}
+          <ul class="bg-white mb-2 md:mb-0 md:rounded-md md:drop-shadow-md">
+            {% for sub_item in item.dropdown %}
+            <li>
+              <a
+                href="{{ sub_item.link }}"
+                class="block text-action-500 underline p-4 hover:bg-gray-100 rounded-md hover:text-action-900 hover:decoration-dotted"
+                >{{ sub_item.name }}</a
+              >
+            </li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</header>

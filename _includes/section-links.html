@@ -1,0 +1,49 @@
+{% for section in site.data.[page.sections] %}
+<div class="bg-gray-200 px-8 pt-4 pb-1 rounded-md mt-8 mb-2">
+  <h2>{{ section.title }}</h2>
+</div>
+
+<div class="flex justify-start flex-wrap">
+  {% for section_link in section.links %}
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4">
+    <div class="shadow-lg pb-8 rounded-md h-full relative">
+      {% if section_link.image %}
+      <div class="aspect-w-2 aspect-h-1">
+        <img
+          src="{{ section_link.image }}"
+          alt="{{ section_link.name }}"
+          class="rounded-t-md w-full h-full object-center object-cover"
+        />
+      </div>
+
+      {% endif %}
+      <div class="px-4 pt-2">
+        <h3>
+          <a
+            href="{{ section_link.link }}"
+            class="text-action-500 py-2 flex flex-row justify-between underline hover:decoration-dotted hover:text-action-900 after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:block"
+          >
+            <span class="mr-2">{{ section_link.name }}</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </a>
+        </h3>
+        <p>{{ section_link.summary }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}

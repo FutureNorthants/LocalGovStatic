@@ -1,0 +1,50 @@
+- title: Page components
+  links:
+    - name: Accordion
+      link: /components/accordion/
+      summary: An accordion for collapsible text
+    - name: Button
+      link: /components/button/
+      summary: A link button component
+    - name: Contents
+      link: /components/contents/
+      summary: Contents to link to sub pages
+    - name: File download
+      link: /components/file-download/
+      summary: A link to a file download
+    - name: Hero image
+      link: /components/hero-image/
+      summary: A hero image at the top of a page
+    - name: Image
+      link: /components/image/
+      summary: Embedding an image into a page
+    - name: Notification
+      link: /components/notification/
+      summary: A notification with a title and message
+    - name: Phase banner
+      link: /components/phase-banner/
+      summary: Add a phase banner to the site
+    - name: Video
+      link: /components/video/
+      summary: Embed a YouTube video
+    - name: Warning text
+      link: /components/warning-text
+      summary: Warning text that stands out from standard content
+
+- title: Navigation components
+  links:
+    - name: Breadcrumbs
+      link: /components/breadcrumbs/
+      summary: Adding navigation breadcrumbs to the page
+    - name: Footer links
+      link: /components/footer-links/
+      summary: Add links to the footer
+    - name: Main navigation
+      link: /components/main-navigation/
+      summary: Add links to the main navigation, including a dropdown
+    - name: Related links
+      link: /components/related-links/
+      summary: Add a list of related links to a page
+    - name: Section links
+      link: /components/section-links/
+      summary: Adding section links to a landing page

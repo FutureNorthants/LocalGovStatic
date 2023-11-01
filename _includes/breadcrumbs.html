@@ -1,0 +1,48 @@
+<ul class="flex justify-start my-8">
+  <li class="mr-2">
+    <a
+      href="{{ site.baseurl }}/"
+      class="text-sm text-action-500 underline flex flex-nowrap items-center hover:decoration-dotted"
+      ><span class="mr-2">Home</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-5 h-5"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </a>
+  </li>
+  {% for breadcrumb in page.breadcrumbs %}
+  <li class="mr-2">
+    <a
+      href="{{ site.baseurl }}{{ breadcrumb.link}}"
+      class="text-sm text-action-500 underline flex flex-nowrap items-center hover:decoration-dotted"
+      ><span class="mr-2">{{ breadcrumb.name }}</span>
+      {% if forloop.last == false %}
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-5 h-5"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+        />
+      </svg>
+      {% endif %}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

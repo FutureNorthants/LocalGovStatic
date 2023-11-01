@@ -1,0 +1,20 @@
+- name: Accordion
+  link: /components/accordion/
+- name: Button
+  link: /components/button/
+- name: Contents
+  link: /components/contents/
+- name: File download
+  link: /components/file-download/
+- name: Hero image
+  link: /components/hero-image/
+- name: Image
+  link: /components/image/
+- name: Notification
+  link: /components/notification/
+- name: Phase banner
+  link: /components/phase-banner/
+- name: Video
+  link: /components/video/
+- name: Warning text
+  link: /components/warning-text/

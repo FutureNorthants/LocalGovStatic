@@ -1,0 +1,10 @@
+- name: Breadcrumbs
+  link: /components/breadcrumbs/
+- name: Footer links
+  link: /components/footer-links/
+- name: Main navigation
+  link: /components/main-navigation/
+- name: Related links
+  link: /components/related-links/
+- name: Section links
+  link: /components/section-links/

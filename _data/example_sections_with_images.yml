@@ -1,0 +1,20 @@
+- title: First section
+  links:
+    - name: Example Page
+      link: "#"
+      summary: An example landing page
+      image: https://picsum.photos/400/300
+    - name: Second Example page
+      link: "#"
+      summary: An example content page
+      image: https://picsum.photos/500/250
+- title: Second section
+  links:
+    - name: Example Page
+      link: "#"
+      summary: An example landing page
+      image: https://picsum.photos/700/350
+    - name: Second Example page
+      link: "#"
+      summary: An example content page
+      image: https://picsum.photos/600/300

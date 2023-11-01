@@ -1,0 +1,52 @@
+---
+---
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+  display: none !important;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl mb-4 font-bold;
+  }
+  h2 {
+    @apply text-2xl mb-3 font-bold;
+  }
+  h3 {
+    @apply text-xl mb-3 font-bold;
+  }
+  h4 {
+    @apply text-lg mb-3 font-bold;
+  }
+  a:focus {
+    @apply bg-yellow-500 text-black;
+  }
+  a:active {
+    @apply bg-yellow-500 text-black;
+  }
+}
+
+.nav-item {
+  @apply relative;
+}
+
+.nav-item ul {
+  @apply md:hidden md:absolute md:top-12 md:left-0 md:right-0 md:max-w-md;
+}
+
+.nav-item:hover ul {
+  @apply md:block z-10;
+}
+
+.skip-link {
+  @apply overflow-hidden w-px h-px m-0 absolute;
+}
+
+.skip-link:focus,
+.skip-link:active {
+  @apply bg-yellow-500 block static text-black p-4 w-auto h-auto overflow-visible underline;
+}

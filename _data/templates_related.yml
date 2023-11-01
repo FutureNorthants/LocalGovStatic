@@ -1,0 +1,4 @@
+- name: Landing page
+  link: /templates/landing-page/
+- name: Content page
+  link: /templates/content-page/

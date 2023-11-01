@@ -1,0 +1,20 @@
+<div class="aspect-w-16 aspect-h-9">
+  {% if include.youtube %}
+  <iframe
+    src="https://www.youtube.com/embed/{{ include.youtube }}?showinfo=0"
+    frameborder="0"
+    allowfullscreen
+    aria-label="{{ include.label }}"
+  >
+  </iframe>
+  {% else if include.vimeo %}
+  <iframe
+    src="https://player.vimeo.com/video/{{ include.vimeo }}?color=ff9933&title=0&byline=0&portrait=0"
+    frameborder="0"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen
+    aria-label="{{ include.label }}"
+  ></iframe>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  {% endif %}
+</div>

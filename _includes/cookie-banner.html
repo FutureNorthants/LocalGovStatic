@@ -1,0 +1,41 @@
+<div
+  class="bg-gray-200"
+  x-cloak
+  x-data="{hide_banner: true}"
+  x-init="hide_banner = docCookies.hasItem('hide_banner') ? (docCookies.getItem('hide_banner') == 'true') : false;"
+  x-bind:class="{ 'hidden': hide_banner, 'block': !hide_banner }"
+>
+  <div class="container mx-auto max-w-[76rem] p-4 flex flex-col">
+    <p class="text-lg font-bold mb-4">
+      We use cookies on this site to enhance your user experience
+    </p>
+
+    <p class="mb-4">
+      By clicking the Accept button, you agree to us doing so. More info on our
+      <a
+        href="{{ site.baseurl }}/cookie-policy/"
+        class="text-action-500 underline hover:text-action-900 hover:decoration-dotted"
+        >cookie policy</a
+      >
+    </p>
+
+    <div class="flex flex-row space-between flex-wrap">
+      <div class="pr-4">
+        <button
+          class="bg-action-500 hover:bg-action-900 text-white px-4 py-2 rounded-md hover:underline no-underline inline-block active:text-white"
+          @click="hide_banner = true; docCookies.setItem('hide_banner', 'true', (7*24*60*60), '/'); docCookies.setItem('allow_cookies', true, (7*24*60*60), '/');"
+        >
+          Accept all cookies
+        </button>
+      </div>
+      <div class="pr-4">
+        <button
+          class="bg-action-500 hover:bg-action-900 text-white px-4 py-2 rounded-md hover:underline no-underline inline-block active:text-white"
+          @click="hide_banner = true; docCookies.setItem('hide_banner', 'true', (7*24*60*60), '/');"
+        >
+          Reject all cookies
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

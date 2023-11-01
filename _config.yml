@@ -1,0 +1,35 @@
+title: LocalGovStatic
+description: An example static site built with Tailwind CSS
+url: "https://d3h9bp4584rx6.cloudfront.net"
+baseurl: ""
+# logo_url: "/assets/images/path-to-logo.svg"
+
+copyright_name: Copyright name
+copyright_link: "#"
+
+phase: ALPHA
+phase_link: mailto:example@example.com
+
+livereload: true
+
+plugins:
+  - jekyll-postcss-v2
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+postcss:
+  cache: false
+
+paginate_path: "/news/page:num/"
+paginate: 5
+
+permalink: pretty
+
+exclude:
+  - LICENSE.txt
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - README.md
+  - tailwind.config.js
+  - s3-cloudfront.yml
