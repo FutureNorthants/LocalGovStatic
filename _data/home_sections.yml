@@ -9,6 +9,9 @@
     - name: News page
       link: /news/
       summary: An example news/blog page
+    - name: Configuration
+      link: /configuration/
+      summary: How to configure the site
     - name: An example content page
       link: /example-content-page/
       summary: An example content page displaying components

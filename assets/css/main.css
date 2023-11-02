@@ -42,6 +42,10 @@
   @apply md:block z-10;
 }
 
+.site-wide-alert a {
+  @apply underline hover:decoration-dotted;
+}
+
 .skip-link {
   @apply overflow-hidden w-px h-px m-0 absolute;
 }

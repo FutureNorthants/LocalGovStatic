@@ -1,7 +1,7 @@
 ---
 layout: landing-page
 title: Landing page
-hero_image: https://picsum.photos/1200/800
+hero_image: https://picsum.photos/id/128/1200/800
 hero_text: Insert your landing page tagline here
 hero_cta_name: Example call to action
 hero_cta_link: /

@@ -14,6 +14,8 @@
   link: /components/notification/
 - name: Phase banner
   link: /components/phase-banner/
+- name: Site Wide Alert
+  link: /components/site-wide-alert
 - name: Video
   link: /components/video/
 - name: Warning text

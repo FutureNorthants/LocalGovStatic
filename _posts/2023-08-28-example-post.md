@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Example post
-hero_image: https://picsum.photos/1200/600
+hero_image: https://picsum.photos/id/231/1200/600
 breadcrumbs:
   - name: News
     link: /news
@@ -13,7 +13,7 @@ Donec elementum rutrum enim nec consectetur. Suspendisse potenti. Phasellus impe
 
 Sed hendrerit cursus pellentesque. Vivamus ullamcorper tincidunt molestie. Praesent pretium purus eget eleifend dignissim. Phasellus bibendum facilisis justo, eget mattis odio congue non. Vestibulum sit amet lorem massa.
 
-![Example image](https://picsum.photos/800/700)
+![Example image](https://picsum.photos/id/229/800/700)
 
 Nullam egestas vitae dolor quis congue. Phasellus auctor volutpat leo, nec vulputate dui tincidunt non. Vestibulum ornare tellus vitae risus dapibus imperdiet. Nulla lorem diam, consectetur at libero at, tincidunt rutrum quam. Praesent viverra lectus ut dolor aliquam, at mollis velit vehicula. Curabitur enim libero, tempor in dui ac, ornare congue nisi. Nulla in nisl suscipit, accumsan mi quis, rhoncus nunc.
 
