@@ -3,18 +3,18 @@
     - name: Example Page
       link: "#"
       summary: An example landing page
-      image: https://picsum.photos/400/300
+      image: https://picsum.photos/id/182/400/300
     - name: Second Example page
       link: "#"
       summary: An example content page
-      image: https://picsum.photos/500/250
+      image: https://picsum.photos/id/179/500/250
 - title: Second section
   links:
     - name: Example Page
       link: "#"
       summary: An example landing page
-      image: https://picsum.photos/700/350
+      image: https://picsum.photos/id/191/700/350
     - name: Second Example page
       link: "#"
       summary: An example content page
-      image: https://picsum.photos/600/300
+      image: https://picsum.photos/id/199/600/300

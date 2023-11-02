@@ -13,7 +13,7 @@ copyright_link: "/example-content-page/"
 #   message: This is an example of a site wide alert message with a [link](/components/site-wide-alert/).
 
 phase: ALPHA
-phase_link: mailto:example@example.com
+phase_link: https://github.com/FutureNorthants/LocalGovStatic/issues
 
 livereload: true
 
