@@ -50,7 +50,7 @@ You can manually build and deploy the site from your local machine using the fol
 
 ```bash
 JEKYLL_ENV=production bundle exec jekyll build
-aws s3 sync _site s3://bucket-name --delete --profile my-profile
+aws s3 sync _site s3://bucket-name --delete --cache-control max-age=300 --profile my-profile
 ```
 
 ### Deploying using GitHub Actions
