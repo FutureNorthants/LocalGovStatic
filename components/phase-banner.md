@@ -17,7 +17,7 @@ phase: ALPHA
 phase: BETA
 ```
 
-Set the link for feedback by setting the `phase_feedback:` in the `_config.yml` file.
+Set the link for feedback by setting the `phase_link:` in the `_config.yml` file.
 
 ```yaml
 ## For sending an email

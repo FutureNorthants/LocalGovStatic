@@ -24,6 +24,9 @@
     - name: Phase banner
       link: /components/phase-banner/
       summary: Add a phase banner to the site
+    - name: Popular links
+      link: /components/popular-links/
+      summary: Display popular links at the top of the homepage or landing page
     - name: Site Wide Alert
       link: /components/site-wide-alert/
       summary: Add an alert banner to every page on the site
