@@ -13,5 +13,5 @@
       link: /configuration/
       summary: How to configure the site
     - name: An example content page
-      link: /example-content-page/
+      link: /templates/content-page/
       summary: An example content page displaying components
