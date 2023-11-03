@@ -5,7 +5,7 @@ baseurl: ""
 # logo_url: "/assets/images/path-to-logo.svg"
 
 copyright_name: Copyright name
-copyright_link: "/example-content-page/"
+copyright_link: "/templates/content-page/"
 
 # site_wide_alert:
 #   id: 1
