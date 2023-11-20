@@ -4,6 +4,10 @@ This theme is built using Jekyll and Tailwind CSS and is designed as a starter t
 
 It has been setup to follow the process in [this blog post](https://mzrn.sh/2022/04/09/starting-a-blank-jekyll-site-with-tailwind-css-in-2022/) so it uses post-css to process the styles and jekyll to build the pages.
 
+For more background information about static sites and this project, take a look at the [West Northants Local Gov Blog](https://westnorthants.localgov.blog/2023/11/06/introducing-localgovstatic/).
+
+For a demo and more documentation of the components, take a look at the [demo website](https://d3h9bp4584rx6.cloudfront.net/).
+
 ## Usage
 
 - Fork this repository
