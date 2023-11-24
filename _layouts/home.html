@@ -11,3 +11,11 @@ layout: default
 </div>
 
 {% if page.sections %} {% include section-links.html %} {% endif %}
+
+<div>{% include block-title.html title="Latest news" %}</div>
+
+<div class="flex flex-col">
+  {% for post in site.posts limit:3 %}
+  <div class="w-full md:w-1/2 lg:w-1/3 p-4">{% include post-card.html %}</div>
+  {% endfor %}
+</div>
