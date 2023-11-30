@@ -1,18 +1,16 @@
 {% if site.phase and site.phase_link %}
-<div
-  class="pb-4 mb-4 border-b-2 flex flex-row justify-start items-center text-sm"
->
-  <span class="mr-2 bg-action-500 text-white font-bold py-1 px-2"
-    >{{ site.phase }}</span
+  <div
+    class="pb-4 mb-4 border-b-2 flex flex-row justify-start items-center text-sm"
   >
-  <span
-    >This is a new service - your
-    <a
-      href="{{ site.phase_link }}"
-      class="text-action-500 underline hover:decoration-dotted hover:text-action-900"
-      >feedback</a
+    <span class="mr-2 bg-action-500 text-white font-bold py-1 px-2">{{ site.phase }}</span>
+    <span
+      >This is a new service - your
+      <a
+        href="{{ site.phase_link }}"
+        class="text-action-500 underline hover:decoration-dotted hover:text-action-900"
+        >feedback</a
+      >
+      will help us to improve it.</span
     >
-    will help us to improve it.</span
-  >
-</div>
+  </div>
 {% endif %}
