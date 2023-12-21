@@ -4,31 +4,7 @@ layout: default
 <div class="flex flex-wrap md:flex-nowrap justify-between">
   <div class="w-full md:w-2/3 pr-8">
     {% for post in paginator.posts %}
-      <div class="shadow-lg rounded-md mb-8">
-        {% if post.hero_image %}
-          <div class="aspect-w-2 aspect-h-1">
-            <img
-              src="{{ post.hero_image }}"
-              alt="{{ post.title }}"
-              class="rounded-t-md w-full h-full object-center object-cover"
-            >
-          </div>
-        {% endif %}
-        <div class="px-8 py-4">
-          <h3>
-            <a href="{{ post.url }}" class="underline hover:decoration-dotted">{{ post.title }}</a>
-          </h3>
-          <p class="my-2">Published: {{ post.date | date: '%b %-d, %Y' }}</p>
-          <div class="prose prose-base">{{ post.excerpt }}</div>
-          <div class="flex justify-center py-4">
-            <a
-              href="{{ post.url }}"
-              class="text-action-500 underline hover:decoration-dotted"
-              >Read more</a
-            >
-          </div>
-        </div>
-      </div>
+      {% include post-card.html %}
     {% endfor %}
 
     <!-- Pagination links -->
@@ -40,6 +16,7 @@ layout: default
         >
           Previous
         </a>
+
       {% else %}
         <span class="text-gray-500">Previous</span>
       {% endif %}
