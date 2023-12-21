@@ -1,59 +1,63 @@
 {% assign page_contents = site.data[page.contents].links %}
 <div class="flex flex-wrap mt-8 mb-8 w-full">
-  {% for item in page_contents %} {% if page.url == item.link %} {% unless
-  forloop.first %}
-  <div class="w-full border-b-2">
-    {% assign prev = forloop.index0 | minus: 1 %}
-    <a
-      href="{{ page_contents[prev].link }}"
-      class="text-action-500 hover:text-action-900 hover:underline hover:decoration-dotted flex flex-nowrap hover:bg-gray-200 py-4 pl-4"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-6 h-6 mr-4"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-        />
-      </svg>
-      <div class="flex flex-wrap">
-        <span class="w-full mb-2">Previous</span>
-        <span class="w-full underline">{{ page_contents[prev].name }}</span>
-      </div>
-    </a>
-  </div>
-  {% endunless %} {% unless forloop.last %}
-  <div class="w-full border-b-2">
-    {% assign next = forloop.index0 | plus: 1 %}
-    <a
-      href="{{ page_contents[next].link }}"
-      class="text-action-500 hover:text-action-900 hover:underline hover:decoration-dotted flex flex-nowrap hover:bg-gray-200 py-4 pl-2"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-6 h-6 mr-4"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-        />
-      </svg>
-      <div class="flex flex-wrap">
-        <span class="w-full mb-2">Next</span>
-        <span class="w-full underline">{{ page_contents[next].name }}</span>
-      </div>
-    </a>
-  </div>
-  {% endunless %} {% endif %} {% endfor %}
+  {% for item in page_contents %}
+    {% if page.url == item.link %}
+      {% unless forloop.first %}
+        <div class="w-full border-b-2">
+          {% assign prev = forloop.index0 | minus: 1 %}
+          <a
+            href="{{ page_contents[prev].link }}"
+            class="text-action-500 hover:text-action-900 hover:underline hover:decoration-dotted flex flex-nowrap hover:bg-gray-200 py-4 pl-4"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 mr-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+              />
+            </svg>
+            <div class="flex flex-wrap">
+              <span class="w-full mb-2">Previous</span>
+              <span class="w-full underline">{{ page_contents[prev].name }}</span>
+            </div>
+          </a>
+        </div>
+      {% endunless %}
+      {% unless forloop.last %}
+        <div class="w-full border-b-2">
+          {% assign next = forloop.index0 | plus: 1 %}
+          <a
+            href="{{ page_contents[next].link }}"
+            class="text-action-500 hover:text-action-900 hover:underline hover:decoration-dotted flex flex-nowrap hover:bg-gray-200 py-4 pl-2"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 mr-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+              />
+            </svg>
+            <div class="flex flex-wrap">
+              <span class="w-full mb-2">Next</span>
+              <span class="w-full underline">{{ page_contents[next].name }}</span>
+            </div>
+          </a>
+        </div>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
 </div>

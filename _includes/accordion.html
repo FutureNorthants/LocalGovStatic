@@ -7,9 +7,7 @@
     x-bind:aria-expanded="accordionOpen"
     aria-controls="{{ include.title | slugify }}-accordion"
   >
-    <span class="font-bold" id="{{ include.title | slugify }}-heading"
-      >{{ include.title }}</span
-    >
+    <span class="font-bold" id="{{ include.title | slugify }}-heading">{{ include.title }}</span>
 
     <span
       x-show="accordionOpen"

@@ -1,7 +1,9 @@
 {
   "name": "local-gov-static",
   "private": "true",
-  "scripts": {},
+  "scripts": {
+    "prettier": "prettier . --write"
+  },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.2.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
