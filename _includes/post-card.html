@@ -1,14 +1,18 @@
 <div class="shadow-lg mb-8 rounded-md ">
-    {% if post.hero_image %}
+  {% if post.hero_image %}
     <div class="aspect-w-2 aspect-h-1">
-      <img src="{{ post.hero_image }}" alt="{{ post.title }}" class="rounded-t-md w-full h-full object-center object-cover" />
+      <img
+        src="{{ post.hero_image }}"
+        alt="{{ post.title }}"
+        class="rounded-t-md w-full h-full object-center object-cover"
+      >
     </div>
-    {% endif %}
+  {% endif %}
   <div class="p-4">
-    <h3><a href="{{ post.url }}" class="underline hover:decoration-dotted flex">{{ post.title }}</a></h1>
-    <p class="my-2">
-      Published: {{ post.date | date: "%b %-d, %Y" }}
-    </p>
+    <h3>
+      <a href="{{ post.url }}" class="underline hover:decoration-dotted flex">{{ post.title }}</a>
+    </h3>
+    <p class="my-2">Published: {{ post.date | date: '%b %-d, %Y' }}</p>
     <div class="prose prose-sm">{{ post.excerpt }}</div>
     <div class="flex justify-center py-4">
       <a href="{{ post.url }}" class="text-action-500 underline hover:decoration-dotted flex px-4 py-2">Read more</a>

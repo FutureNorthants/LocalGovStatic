@@ -1,29 +1,30 @@
 <!doctype html>
 <html lang="en-GB">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" />
-    <link href="{{ site.baseurl }}/assets/css/monokai.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/assets/css/monokai.css" rel="stylesheet">
     {% seo %}
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <div>{% include cookie-banner.html %}</div>
-    <div>{% include site-wide-alert.html %}</div>
+    {% include cookie-banner.html %}
+    {% include site-wide-alert.html %}
     {% include header.html %}
     <div>{% include hero-image.html %}</div>
     <div class="container mx-auto p-4 max-w-[76rem]">
       <div>{% include phase-banner.html %}</div>
       <div>
-        {% if page.url != "/" %}{% include breadcrumbs.html %}{% endif %}
+        {% if page.url != '/' %} {% include breadcrumbs.html %} {% endif %}
       </div>
       <main id="main-content" role="main">
         {% if page.contents %}
-        <h1>{{ site.data[page.contents].title }}</h1>
+          <h1>{{ site.data[page.contents].title }}</h1>
         {% else %}
-        <h1>{{ page.title }}</h1>
-        {% endif %} {{ content }}
+          <h1>{{ page.title }}</h1>
+        {% endif %}
+        {{ content }}
       </main>
     </div>
     {% include footer.html %}

@@ -1,4 +1,7 @@
 <div>
   <h2>Latest news</h2>
-  {% for post in site.posts limit:3 %} {% include post-card.html %} {% endfor %}
+
+  {% for post in site.posts limit: 3 %}
+    {% include post-card.html %}
+  {% endfor %}
 </div>

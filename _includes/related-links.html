@@ -1,15 +1,16 @@
 <ul class="list-disc list-inside">
   {% for item in site.data.[page.related] %}
-  <li class="pb-2">
-    {% if page.url == item.link %}
-    <span>{{ item.name }}</span>
-    {% else %}
-    <a
-      href="{{ item.link }}"
-      class="text-action-500 hover:underline py-2 underline hover:decoration-dotted hover:text-action-900"
-      >{{ item.name }}</a
-    >
-    {% endif %}
-  </li>
+    <li class="pb-2">
+      {% if page.url == item.link %}
+        <span>{{ item.name }}</span>
+      {% else %}
+        <a
+          href="{{ item.link }}"
+          class="text-action-500 hover:underline py-2 underline hover:decoration-dotted hover:text-action-900"
+        >
+          {{- item.name -}}
+        </a>
+      {% endif %}
+    </li>
   {% endfor %}
 </ul>

@@ -1,38 +1,36 @@
 {% if page.popular_links %}
-<div class="mt-6 mb-10 border-b-4 border-action-500 py-4 bg-gray-50 rounded-md">
-  <h2 class="px-8">
-    {{ page.popular_links_heading | default: "Popular links" }}
-  </h2>
-  <ul class="mt-4 flex flex-wrap p-4">
-    {% for item in page.popular_links %}
-    <li class="flex w-full md:w-1/2 lg:w-1/3 p-4 relative">
-      <a
-        href="{{ item.link }}"
-        class="text-action-500 w-full py-2 flex flex-row items-center underline hover:decoration-dotted hover:text-action-900 after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:block"
-      >
-        <div class="bg-gray-200 rounded-full mr-4 p-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6"
+  <div class="mt-6 mb-10 border-b-4 border-action-500 py-4 bg-gray-50 rounded-md">
+    <h2 class="px-8">
+      {{ page.popular_links_heading | default: 'Popular links' }}
+    </h2>
+    <ul class="mt-4 flex flex-wrap p-4">
+      {% for item in page.popular_links %}
+        <li class="flex w-full md:w-1/2 lg:w-1/3 p-4 relative">
+          <a
+            href="{{ item.link }}"
+            class="text-action-500 w-full py-2 flex flex-row items-center underline hover:decoration-dotted hover:text-action-900 after:absolute after:top-0 after:left-0 after:bottom-0 after:right-0 after:block"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
-            />
-          </svg>
-        </div>
+            <div class="bg-gray-200 rounded-full mr-4 p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+            </div>
 
-        <span class="inline-block flex-grow font-semibold"
-          >{{ item.name }}</span
-        >
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
+            <span class="inline-block flex-grow font-semibold">{{ item.name }}</span>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endif %}
