@@ -10,7 +10,7 @@
   {% endif %}
   <div class="p-4">
     <h3>
-      <a href="{{ post.url }}" class="underline hover:decoration-dotted flex">{{ post.title }}</a>
+      <a href="{{ post.url }}" class="underline hover:decoration-dotted flex py-2">{{ post.title }}</a>
     </h3>
     <p class="my-2">Published: {{ post.date | date: '%b %-d, %Y' }}</p>
     <div class="prose prose-sm">{{ post.excerpt }}</div>
