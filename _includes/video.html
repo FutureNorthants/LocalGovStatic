@@ -7,7 +7,7 @@
       aria-label="{{ include.label }}"
     >
     </iframe>
-  {% else %}
+  {% elsif include.vimeo %}
     <iframe
       src="https://player.vimeo.com/video/{{ include.vimeo }}?color=ff9933&title=0&byline=0&portrait=0"
       frameborder="0"
@@ -16,5 +16,12 @@
       aria-label="{{ include.label }}"
     ></iframe>
     <script src="https://player.vimeo.com/api/player.js"></script>
+  {% elsif include.tiktok %}
+    <iframe
+      src="https://www.tiktok.com/player/v1/{{ include.tiktok }}?controls=1&rel=0&autoplay=0"
+      aria-label="{{ include.label }}"
+    ></iframe>
+  {% else %}
+    <p>Video not supported.</p>
   {% endif %}
 </div>
