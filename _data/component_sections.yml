@@ -32,7 +32,7 @@
       summary: Add an alert banner to every page on the site
     - name: Video
       link: /components/video/
-      summary: Embed a YouTube video
+      summary: Embed a YouTube or TikTok video
     - name: Warning text
       link: /components/warning-text
       summary: Warning text that stands out from standard content

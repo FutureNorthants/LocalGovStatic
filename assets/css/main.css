@@ -54,3 +54,7 @@
 .skip-link:active {
   @apply bg-yellow-500 block static text-black p-4 w-auto h-auto overflow-visible underline;
 }
+
+blockquote.tiktok-embed {
+  border-left: none;
+}
