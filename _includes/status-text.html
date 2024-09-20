@@ -1,0 +1,35 @@
+{% assign overview = include.status %}
+{% case overview %}
+  {% when '4' %}
+    <div class="{% if include.large %} p-4 {% else %} p-1 {% endif %} bg-red-800 text-white rounded">
+      {% if include.text %}
+        {{ include.text }}
+      {% else %}
+        <p>Major outage</p>
+      {% endif %}
+    </div>
+  {% when '3' %}
+    <div class="{% if include.large %} p-4 {% else %} p-1 {% endif %} bg-amber-600 text-white rounded">
+      {% if include.text %}
+        {{ include.text }}
+      {% else %}
+        <p>Partial outage</p>
+      {% endif %}
+    </div>
+  {% when '2' %}
+    <div class="{% if include.large %} p-4 {% else %} p-1 {% endif %} bg-yellow-400 text-black rounded">
+      {% if include.text %}
+        {{ include.text }}
+      {% else %}
+        <p>Performance issues</p>
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="{% if include.large %} p-4 {% else %} p-1 {% endif %} bg-green-800 text-white rounded">
+      {% if include.text %}
+        {{ include.text }}
+      {% else %}
+        <p>All systems operational</p>
+      {% endif %}
+    </div>
+{% endcase %}
