@@ -85,7 +85,7 @@
                 <div class="prose">
                   <p>{{ incident.description }}</p>
                   {% for update in incident.updates %}
-                    <h4>{{ update.date_time }}</h4>
+                    <h4>{{ update.date_time | date: '%A %e %B %Y %l:%M %P' }}</h4>
                     {{ update.description | markdownify }}
                   {% endfor %}
                 </div>
@@ -101,7 +101,7 @@
           {% assign start_date = 'now' | date: '%s' | minus: 2592000 | date: '%s' %}
           {% assign occurrence_date = incident_date.items.first.start_date | date: '%s' %}
           {% if occurrence_date > start_date %}
-            <h3>{{ incident_date.items.first.start_date }}</h3>
+            <h3>{{ incident_date.items.first.start_date | date: '%A %e %B %Y' }}</h3>
             <div class="prose mb-4">
               <ul>
                 {% for item in incident_date.items %}

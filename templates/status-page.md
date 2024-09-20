@@ -53,15 +53,20 @@ incidents:
   - name: staging.example.com outage
     highlight: "yes"
     status: "3"
-    start_date: 2024/09/20
+    start_date: 2024-09-20
     description: An outage with something.
     updates:
-      - date_time: 2024-09-20 10am
+      - date_time: 2024-09-20 10:00:00
         description: |
           This is the latest update for this incident. It can be written in markdown. For example, here is a list:
           - List item
           - More detail
-      - date_time: 2024-09-20 9:30am
+      - date_time: 2024-09-20 9:30:00
         description: |
           This is a previous update.
 ```
+
+### Date formats
+
+- `start_date` should be in the format Y-m-d
+- `date_time` should be in the format Y-m-d H:m:s

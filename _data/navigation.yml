@@ -8,6 +8,8 @@ items:
         link: /templates/landing-page/
       - name: Content Page
         link: /templates/content-page/
+      - name: Status Page
+        link: /templates/status-page/
   - name: Configuration
     link: /configuration/
   - name: News
