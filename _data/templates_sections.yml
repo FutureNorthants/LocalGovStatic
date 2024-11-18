@@ -6,3 +6,6 @@
     - name: Content Page
       link: /templates/content-page/
       summary: An example content page
+    - name: Status Page
+      link: /templates/status-page/
+      summary: A static status page

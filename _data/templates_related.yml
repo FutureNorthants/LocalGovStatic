@@ -2,3 +2,5 @@
   link: /templates/landing-page/
 - name: Content page
   link: /templates/content-page/
+- name: Status page
+  link: /templates/status-page/

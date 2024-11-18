@@ -1,0 +1,63 @@
+# Possible options are 1 = Operational, 2 = Performance Issues, 3 = Partial outage, 4 = Major outage
+status: "2"
+
+websites:
+  - name: example.com
+    status: "1"
+    description: The description for the example.com website
+    url: https://example.com
+  - name: api.example.com
+    status: "2"
+    description: The description for the example.com API
+    url: https://api.example.com
+  - name: staging.example.com
+    status: "3"
+    description: The description for the dev.example.com site
+    url: https://staging.example.com
+  - name: develop.example.com
+    status: "4"
+    description: The description for the develop.example.com site
+    url: https://develop.example.com
+
+incidents:
+  - name: staging.example.com outage
+    highlight: "yes"
+    status: "3"
+    start_date: 2024-09-20
+    description: An outage with something.
+    updates:
+      - date_time: 2024-09-20 10:00:00
+        description: |
+          This is the latest update for this incident. It can be written in markdown. For example, here is a list:
+          - List item
+          - More detail
+      - date_time: 2024-09-20 9:30:00
+        description: |
+          This is a previous update.
+  - name: dev.example.com outage
+    highlight: "yes"
+    status: "4"
+    start_date: 2024-09-19
+    description: A sample description for an incident shown in the incidents list
+    updates:
+      - date_time: 2024-09-20 10:00:00
+        description: |
+          An example update
+  - name: api.example.com outage
+    highlight: "no"
+    status: "4"
+    start_date: 2024-09-19
+    description: A sample update not shown in the current incidents list
+    updates:
+      - date_time: 2024-09-19 10:00:00
+        description: |
+          An example update
+  - name: dev.example.com outage
+    highlight: "no"
+    status: "4"
+    start_date: 2024-07-19
+    description: A sample update not shown in the current incidents list
+    updates:
+      - date_time: 2024-07-19 10:00:00
+        description: |
+          An example update
